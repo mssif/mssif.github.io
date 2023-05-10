@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квест</title>
+  <link rel="stylesheet" href="stylesQuest.css">
+  <link rel="icon" href="images/fav.png" type="image/png">
+</head>
+<body>
+  <div class="questWrapper">
+    <div class="questControl">
+      <a href="teory.html">
+        <button class="qButton">
+          Теория
+        </button>
+      </a>
+      <a href="index.html">
+        <button class="qButton">
+          Приветствие
+        </button>
+      </a>
+    </div>
+
+    <div class="quest">
+      <div id="placeForAQuestion" class="displayNone">
+        <div class="taskText">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="inputComponent displayNone">
+        <div class="inputControl">
+          <input id="inputField" class="" placeholder="Поле для ответа...">
+          <button id="inputValueButton" tabindex="-1">Отправить ответ</button>
+        </div>
+      </div>
+
+      <div id="start" class="taskText">
+        <h2>Грамотный поиск</h2>
+        <p>
+          Квест состоит из 7 заданий, каждое из которых подразумевает использование поисковика. 
+        </p>
+        <p> 
+          После ввода правильного ответа на вопрос будет выведено сообщение "верно". В случае неверного ответа 
+          на вопрос будте изменён цвет границы поля ввода. 
+        </p>
+        <p>
+          Ограничения на время выполнения заданий нет, но в конце можно будет узнать общее
+          время выполнения всех заданий. Эта величина может служить вам маркером успешности выполнения квеста.
+        </p>
+        <p>Желаем удачи!</p>
+        <button id="startButton">Начать</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Балаково, 2023</p>
+    <p>Работа выполнена в рамках конкрурса "Научный поиск"</p>
+  </footer>  
+  <script src="scriptQuest.js"></script>
+</body>
+</html>

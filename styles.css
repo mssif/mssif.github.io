@@ -1,0 +1,466 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.mobileDoublHeader {
+  display: none;
+}
+
+footer p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  font-size: 16px;
+  color: rgb(87, 87, 87);
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+#mobileBack {
+  display: none;
+}
+
+.mottoElement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#motto {
+  font-size: 44px;
+  font-family: Verdana, sans-serif;
+  text-align: left;
+  color:rgb(84, 84, 84);
+  height: 136px;
+  padding-bottom: 30px;
+  /*text-shadow: 1px 1px 1px #a1a1a1;*/
+}
+
+#yellowDecor1 {
+  margin-top: -215px;
+  margin-left: -60px;
+  width: 500px;
+  border-bottom: 200px solid #ffeaa6;
+  border-right: 70px solid transparent;
+}
+
+#orangeDecor1 {
+  margin-top: -40px;
+  margin-left: 15px;
+  width: 720px;
+  height: 15px;
+  background-color:  #ffbd72;
+}
+
+#yellowDecor2 {
+  margin-top: 15px;
+  margin-left: -25px;
+  width: 720px;
+  height: 20px;
+  background-color: #ffeaa6;
+}
+
+#blueDecor1 {
+  margin-top: -65px;
+  margin-left: 170px;
+  width: 680px;
+  border-top: 80px solid #9caddf;
+  border-left: 30px solid transparent;
+}
+
+#blueDecor1 img {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 370px;
+}
+
+#blueDecor2 {
+  margin-top: -95px;
+  margin-left: 60px;
+  width: 700px;
+  height: 15px;
+  background-color: #6376b1;
+}
+
+#blueDecor3 {
+  margin-top: -35px;
+  margin-left: 90px;
+  width: 700px;
+  height: 20px;
+  background-color: #9caddf;
+}
+
+.rightMottoImage { 
+  margin-right: 10px;
+  max-height: 95vh;
+}
+
+.mottoAndInfo {
+  width: 820px;
+  padding-bottom: 80px;
+  margin: auto;
+}
+
+.twoColumns {
+  display: flex;
+  font-family: Tahoma, sans-serif;
+  color:rgb(58, 58, 58);
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.leftColumn {
+  border-radius: 3px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 50px;
+  border: 1px solid rgb(224, 224, 224);
+  box-shadow: 2px 3px 4px rgb(238, 238, 238);
+}
+
+.rightColumn {
+  border-radius: 3px;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+  border: 1px solid rgb(224, 224, 224);
+  box-shadow: 2px 3px 4px rgb(238, 238, 238);
+}
+
+.centerText {
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+  color:rgb(84, 84, 84);
+  font-size: 16px;
+  padding-right: 150px;
+  padding-left: 150px;
+  margin-bottom: 90px;
+}
+
+.qButton {
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ffeaa6;
+}
+
+.bottonControl a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.qButton span {
+  color: #375cce;
+}
+
+.qButton:hover {
+  background-color: #ffc480;
+  box-shadow: 2px 3px 0px rgb(87, 87, 87);
+}
+
+@media (max-width: 1750px) {
+  .rightMottoImage { 
+    margin-right: -200px;
+  }
+}
+
+
+@media (max-width: 1600px) {
+  .rightMottoImage { 
+    margin-right: -400px;
+    max-height: 70vh;
+  }
+}
+
+@media (max-width: 1376px) or (max-height: 850px) {
+  .rightMottoImage { 
+    margin-right: -210px;
+    max-height: 70vh;
+  }
+
+  #motto {
+    font-size: 28px;
+    padding-bottom: 85px;
+    padding-right: 40px;
+  }
+
+  .twoColumns {
+    font-size: 14px;
+  }
+
+  .leftColumn {
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 30px;
+  }
+  
+  .rightColumn {
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+
+  .centerText {
+    font-size: 12px;
+    margin-bottom: 70px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .mottoAndInfo {
+    width: 600px;
+    padding-bottom: 40px;
+  }
+  
+  #yellowDecor1 {
+    margin-top: -110px;
+    margin-left: -60px;
+    width: 250px;
+    border-bottom: 100px solid #ffeaa6;
+    border-right: 70px solid transparent;
+  }
+
+  #orangeDecor1 {
+    margin-top: -155px;
+    margin-left: 0px;
+    width: 600px;
+    height: 10px;
+    background-color:  #ffbd72;
+  }
+
+  #yellowDecor2 {
+    margin-top: 10px;
+    margin-left: -25px;
+    width: 600px;
+    height: 15px;
+    background-color: #ffeaa6;
+  }
+
+  #blueDecor1 {
+    margin-top: -45px;
+    margin-left: 130px;
+    width: 510px;
+    border-top: 60px solid #9caddf;
+    border-left: 30px solid transparent;
+  }
+
+  #blueDecor1 img {
+    width: 300px;
+    margin-top: -37px;
+    margin-left: 220px;
+  }
+
+  #blueDecor2 {
+    margin-top: -70px;
+    margin-left: 10px;
+    width: 600px;
+    height: 10px;
+    background-color: #6376b1;
+  }
+
+  #blueDecor3 {
+    margin-top: -25px;
+    margin-left: 35px;
+    width: 600px;
+    height: 15px;
+    background-color: #9caddf;
+  }
+
+  .qButton {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 1375px) and (min-height: 900px) {
+  .rightMottoImage { 
+    margin-right: -250px;
+    max-height: 60vh;
+  }
+}
+
+@media (max-width: 1160px) and (min-height: 850px) {
+  .rightMottoImage { 
+    margin-right: -160px;
+    max-height: 45vh;
+  }
+}
+
+@media (max-width: 1050px) {
+  .rightMottoImage { 
+    display: none;
+  }
+
+  #blueDecor1 {
+    margin-left: 120px;
+  }
+
+  #blueDecor1 img {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+ #yellowDecor1 {
+    display: none;
+  }
+    
+  .mobileDoublHeader {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color:#6376b1;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #mobileBack {
+    display: block;
+    height: 40vh;
+    width: 100%;
+    margin-bottom: -140px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3)), 
+    url("images/chrome2.png");
+    background-size: cover;
+  }
+
+  .mottoElement {
+    align-items: baseline;
+    overflow: visible;
+  }
+
+  .mottoAndInfo {
+    width: 100%;
+    margin: 0;
+  }
+
+  #motto {
+    font-size: 24px;
+    padding: 30px;
+    height: 120px;
+    margin: 0;
+  }
+
+  #orangeDecor1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  #yellowDecor2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .twoColumns {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 15px solid #9caddf;
+  }
+
+  .leftColumn {
+    padding: 30px;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .rightColumn  {
+    padding: 30px;
+    padding-top: 0px;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .centerText {
+    margin: 0;
+    border-top: 10px solid #6376b1;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+
+    
+  #blueDecor1 {
+    display: none;
+  }
+
+  #blueDecor2 {
+    display: none;
+  }
+
+  #blueDecor3 {
+    display: none;
+  }
+
+  .bottonControl {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottonControl a {
+    margin-right: 10px;
+  }
+
+  .qButton {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 28px;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  #mobileBack {
+    margin-bottom: -120px;
+  }
+
+  #motto {
+    font-size: 22px;
+    height: 100px;
+  }
+}

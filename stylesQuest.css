@@ -1,0 +1,455 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+footer p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  font-size: 16px;
+  color: rgb(87, 87, 87);
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.questWrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questControl {
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 15px;
+}
+
+.quest {
+  flex: auto;
+  width: 900px;
+}
+
+#placeForAQuestion {
+  display: flex;
+  width: 100%;
+}
+
+.taskText {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: left;
+  color: rgb(87, 87, 87);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  min-height: 45vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.taskText h2 {
+  font-size: 36px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+.taskTextAndImage {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: baseline;
+  color: rgb(87, 87, 87);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  min-height: 45vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.taskTextAndImage div p {
+  padding-right: 40px;
+}
+
+.taskTextAndImage div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskTextAndImage h2 {
+  font-size: 36px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+.taskTextAndImage img {
+  max-height: 30vh;
+  max-width: 50%;
+  padding-left: 40px;
+  border-left: 1px solid gray;
+}
+
+.correctAnswer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(87, 87, 87);
+  font-size: 36px;
+  min-height: 45vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.correctAllAnswer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(87, 87, 87);
+  font-size: 36px;
+  min-height: 45vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.inputComponent {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 10px solid #ffc480;;
+  margin-top: 30px;
+}
+
+
+.qButton {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ffeaa6;
+}
+
+#startButton {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  height: 60px;
+  border-radius: 40px;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #cad8ff;
+}
+
+#startButton:hover {
+  background-color: #acc2ff; 
+  box-shadow: 2px 3px 0px rgb(87, 87, 87);
+}
+
+.questControl a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.questControl a:last-child {
+  margin-right: 0px;
+}
+
+.qButton:hover {
+  background-color: #ffc480;
+  box-shadow: 2px 3px 0px rgb(87, 87, 87);
+}
+
+.inputControl {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  width: 700px;
+}
+
+#inputField {
+  flex: auto;
+  padding: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 20px;
+  height: 60px;
+  border-radius: 40px;
+  font-size: 20px;
+  border: 1px solid gray;
+}
+
+#inputField:active, #inputField:focus {
+  outline: 0;
+  outline-offset: 0;
+  border: 1px solid gray;
+  box-shadow: 2px 3px 0px rgb(87, 87, 87);
+}
+
+.errorAnimated {
+  animation-duration: 0.8s;
+  animation-name: inputError;
+  animation-timing-function: ease;
+}
+
+@keyframes inputError {
+  0% {
+    transform: scale(1);
+    border: 1px solid gray;
+    color: rgb(87, 87, 87);
+    background-color: rgb(255, 255, 255);
+  }
+
+  40%, 60% {
+    transform: scale(1.05);
+    border: 1px solid rgb(228, 95, 95);
+    color: rgb(228, 95, 95);
+    background-color: rgb(255, 243, 243);
+  }
+
+  100% {
+    transform: scale(1);
+    border: 1px solid gray;
+    color: rgb(87, 87, 87);
+    background-color: white;
+  }
+}
+
+
+#inputValueButton {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  height: 60px;
+  border-radius: 40px;
+
+  border: none;
+  cursor: pointer;
+  background-color: #cad8ff;
+}
+
+#inputValueButton:hover {
+  background-color: #acc2ff; 
+  box-shadow: 2px 3px 0px rgb(87, 87, 87);
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.hideСontent {
+  animation-duration: 0.8s;
+  animation-name: hideСontentAnimation;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideСontentAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.showContent {
+  animation-duration: 0.8s;
+  animation-name: showContentAnimation;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showContentAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hideShow {
+  animation-duration: 3.2s;
+  animation-name: hideAndShow;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideAndShow {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 950px) {
+  .quest {
+    width: 600px;
+  }
+
+  .inputControl {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    width: 500px;
+  }
+
+  #inputField, #inputValueButton {
+    font-size: 16px;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .quest {
+    width: calc(100% - 60px);
+  }
+
+  .inputControl {
+    padding: 30px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #inputField {
+    margin: 0;
+    font-size: 14px;
+    height: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% - 30px);
+  }
+
+  #inputValueButton {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 28px;
+    margin-top: 20px;
+  }
+
+  #startButton {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 28px;
+    margin-top: 20px;
+  }
+
+  .qButton {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 24px;
+  }
+
+  .correctAnswer {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .correctAllAnswer {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .taskTextAndImage div {
+    flex-direction: column;
+  }
+
+  .taskTextAndImage div p {
+    flex-direction: column;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gray;
+  }
+
+  .taskTextAndImage img {
+    border-left: none;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .taskText h2, .taskTextAndImage h2 {
+    font-size: 22px;
+  }
+
+  .correctAnswer h2, .correctAllAnswer h2 {
+    font-size: 32px;
+  }
+
+  .taskTextAndImage div p, .taskText, .correctAllAnswer p {
+    font-size: 14px;
+  }
+
+  .inputComponent {
+    border-top: none;
+  }
+
+  .taskText, .taskTextAndImage, .correctAnswer, .correctAllAnswer {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    min-height: 65vh;
+  }
+}

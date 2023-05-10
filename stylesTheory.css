@@ -1,0 +1,555 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+footer p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  font-size: 16px;
+  color: rgb(87, 87, 87);
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.tButton {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ffeaa6;
+}
+
+.stickyRow a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.tButton:hover {
+  background-color: #ffc480;
+  box-shadow: 2px 3px 0px rgb(87, 87, 87);
+}
+
+#mButton {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 15px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #afbfec;
+}
+
+#mButton:hover {
+  background-color: #8199db; 
+  box-shadow: 2px 3px 0px rgb(87, 87, 87);
+}
+
+#mButton p {
+  padding: 0;
+  margin: auto;
+}
+
+#menuArrow {
+  height: 16px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#theoryMenu {
+  position: sticky;
+  top: 0px;
+  padding: 15px;
+  width: 400px;
+  height: 100vh;
+  background-color: #f7f6f6;
+  box-shadow: 0px -1px 5px 1px rgb(195, 195, 195);
+  z-index: 100;
+}
+
+.closeMenuStyle {
+  animation-duration: 0.7s;
+  animation-name: menuClose;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menuClose {
+  from {
+    opacity: 1;
+    margin-left: 0px;
+  }
+
+  to {
+    opacity: 0;
+    margin-left: -430px;
+  }
+}
+
+.openMenuStyle {
+  animation-duration: 0.7s;
+  animation-name: menuOpen;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menuOpen {
+  from {
+    opacity: 0;
+    margin-left: -430px;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+.theoryWrapper {
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  color: #1e48c9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+nav p {
+  margin-top: 30px;
+  color: rgb(87, 87, 87);
+  font-size: 18px;
+  text-align: center;
+}
+
+nav span {
+  color: rgb(87, 87, 87);
+}
+
+nav ol{
+  list-style: none;
+  padding-left: 10px;
+  line-height: 2.2;
+}
+
+nav ol ol {
+  list-style: none;
+  padding-left: 30px;
+  line-height: 2.2;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #315cdf;
+}
+
+nav a:visited {
+  color: #315cdf;
+}
+
+.stickyRow {
+  margin-left: 0;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  height: 30px;
+  background-color: white;
+  z-index: 5;
+  box-shadow: 0 8px 8px -2px rgb(255, 255, 255);
+}
+
+.theoryContent {
+  flex: auto;
+}
+
+.theoryMainConsider {
+  display: flex;
+  justify-content: center;
+  
+}
+
+main {
+  width: 850px;
+}
+
+main h2 {
+  color: rgb(87, 87, 87);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  margin-top: 80px;
+}
+
+main h3 {
+  color: rgb(87, 87, 87);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin-top: 60px;
+}
+
+main p {
+  color: rgb(87, 87, 87);
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.code {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(87, 87, 87);
+  font-size: 16px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.code p {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.litr {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #afbfec;
+}
+
+.litr a {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #315cdf;
+}
+
+.litr a:active, .litr a:focus {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  color: #315cdf;
+}
+
+.headerLitr {
+  display: inline-block;
+  background-color: #afbfec;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  color: rgb(26, 26, 26);
+}
+
+.imagesTheory {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.imageCaption {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+.linkButton a {
+  display: block;
+}
+
+.linkButton {
+  background-color: #ffeaa6;
+  border: none;
+  border-left: 1px solid rgb(207, 207, 207);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px; 
+  height: 100%;
+}
+
+.linkButton:hover {
+  background-color: #ffc480;
+}
+
+.anchor {
+  display: block;
+  height: 180px; /*same height as header*/
+  margin-top: -180px; /*same height as header*/
+  visibility: hidden;
+}
+
+@media (max-width: 1400px) {
+  main {
+    width: 700px;
+  }
+
+  #theoryMenu {
+    padding: 10px;
+    padding-right: 15px;
+    width: 300px;
+  }
+  
+  nav {
+    font-size: 14px;
+  }
+
+  @keyframes menuClose {
+    from {
+      opacity: 1;
+      margin-left: 0px;
+      pointer-events: all;
+    }
+
+    to {
+      opacity: 0;
+      margin-left: -330px;
+      pointer-events: none;
+    }
+  }
+
+  @keyframes menuOpen {
+    from {
+      opacity: 0;
+      margin-left: -330px;
+      pointer-events: none;
+    }
+
+    to {
+      opacity: 1;
+      margin-left: 0px;
+      pointer-events: all;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  main {
+    width: 600px;
+  }
+
+  nav p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  #theoryMenu {
+    padding: 10px;
+    padding-right: 15px;
+    width: 250px;
+  }
+  
+  nav {
+    font-size: 12px;
+  }
+
+  .linkButton {
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px; 
+  }
+
+  .tButton {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 24px;
+  }
+
+  #mButton {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+    height: 24px;
+  }
+
+  #menuArrow {
+    height: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  @keyframes menuClose {
+    from {
+      opacity: 1;
+      margin-left: 0px;
+      pointer-events: all;
+    }
+
+    to {
+      opacity: 0;
+      margin-left: -280px;
+      pointer-events: none;
+    }
+  }
+
+  @keyframes menuOpen {
+    from {
+      opacity: 0;
+      margin-left: -280px;
+      pointer-events: none;
+    }
+
+    to {
+      opacity: 1;
+      margin-left: 0px;
+      pointer-events: all;
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 960px) and (min-width: 650px) {
+  #theoryMenu {
+    position: fixed;
+  }
+
+  .stickyRow {
+    margin-left: calc(25px + 250px);
+  }
+
+  .menuAdaptLeft {
+    animation-duration: 0.7s;
+    animation-name: menuInTheLeftPosition;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes menuInTheLeftPosition {
+    from {
+      margin-left: calc(25px + 250px);
+    }
+
+    to {
+      margin-left: 0px;
+    }
+  }
+
+  .menuAdaptRight {
+    animation-duration: 0.7s;
+    animation-name: menuInTheRightPosition;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes menuInTheRightPosition {
+    from {
+      margin-left: 0px;
+    }
+
+    to {
+      margin-left: calc(25px + 250px);
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  #theoryMenu {
+    position: fixed;
+    width: calc(100% - 25px);
+  }
+  
+  .stickyRow {
+    background-color: #f7f6f6;
+    box-shadow: none;
+    z-index: 1000;
+  }
+
+  main {
+    width: calc(100% - 30px);
+    padding: 15px;
+  }
+
+  nav p {
+    margin-top: 50px;
+  }
+
+  main h2 {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  main h3 {
+    font-size: 20px;
+  }
+
+  .menuAdaptLeft {
+    animation-duration: 0.7s;
+    animation-name: menuInTheLeftPosition;
+    animation-fill-mode: forwards;
+  }
+
+  main p {
+    font-size: 14px;
+  }
+
+  .code {
+    font-size: 14px;
+  }
+  
+
+  @keyframes menuInTheLeftPosition {
+    from {
+      background-color: #f7f6f6;
+      box-shadow: none;
+    }
+
+    to {
+      background-color: white;
+      box-shadow: 0 8px 8px -2px rgb(255, 255, 255);
+    }
+  }
+
+  .menuAdaptRight {
+    animation-duration: 0.7s;
+    animation-name: menuInTheRightPosition;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes menuInTheRightPosition {
+    from {
+      background-color: white;
+      box-shadow: 0 8px 8px -2px rgb(255, 255, 255);
+    }
+
+    to {
+      background-color: #f7f6f6;
+      box-shadow: none;
+    }
+  }
+}
