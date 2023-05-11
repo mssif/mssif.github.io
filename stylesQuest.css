@@ -395,9 +395,14 @@ footer p {
 
   .qButton {
     font-size: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 24px;
+  }
+  
+  .questControl a {
+    margin-right: 10px;
+    text-decoration: none;
   }
 
   .correctAnswer {
