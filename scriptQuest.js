@@ -123,7 +123,7 @@ buttonI.addEventListener('click', buttonIhandler);
                   `;
                 }
               }
-              
+              inputField.value="";
               setTimeout(() => {
                 placeForAQuestion.classList.remove("hideShow");
               }, 800);
