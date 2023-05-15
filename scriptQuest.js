@@ -23,7 +23,7 @@ let arrayForQuestion = [
   { 
     header: "Вопрос №2",
     question: "Как называется часть крыла, которую видно на этой картинке? В качестве ответа укажите одно слово.",
-    imageSource: "https://avatars.mds.yandex.net/get-images-cbir/101700/GB1UuJTn-gXNuCvK9MBavQ3061/ocr",
+    imageSource: "./images/747.jpg",
     answer: ["Закрылок", "Закрылки", "закрылок", "закрылки"],
   },
   {
